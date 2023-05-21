@@ -27,7 +27,7 @@ function Blockscope() {
       console.log(y); // Output: 3 (accessible within the function)
     }
     
-    // console.log(x); // Error: x is not defined (outside the block)
+    console.log(x); // Error: x is not defined (outside the block)
     console.log(y); // Output: 3 (accessible within the function)
   }
   
