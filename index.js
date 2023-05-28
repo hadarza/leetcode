@@ -7,10 +7,11 @@ const ex1971 = require('./easy/ex1971')
 const ex876 = require('./easy/ex876')
 const ex94 = require('./easy/ex94')
 const ex1672 = require('./easy/ex1672')
-
+const ex15 = require('./medium/ex15')
 const ex371 = require('./medium/ex371')
 const ex455 = require('./medium/ex455')
 const ex322 = require('./medium/ex322')
+const ex1926 = require('./medium/ex1926')
 
 const currying = require('./js-functions/currying')
 const closures = require('./js-functions/scope_letVar')
@@ -93,12 +94,24 @@ console.log(variable_2); // 15
 //  console.log(variable_3); //undefined
 var variable=30;
 
-// const func = ()=>{
-//   var variable_4 = 35;
-// }
+const func = ()=>{
+  var variable_4 = 35;
+}
 // console.log(variable_4); //undefinied
 
 console.log(x);
+
+// // ex15
+// let nums = [1,4,5,7,3,-3,4,-1,-3,0]
+// ex15.threeSum(nums)
+
+let nearest = ex1926.nearestExit([["+",".","+","+","+","+","+"],
+                                  ["+",".","+",".",".",".","+"],
+                                  ["+",".","+",".","+",".","+"],
+                                  ["+",".",".",".","+",".","+"],
+                                  ["+","+","+","+","+",".","+"]],[0,1])
+console.log(nearest)
+
 app.listen(port, () => {
   console.log(`app listening on port ${port}`)
 })
