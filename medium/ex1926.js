@@ -10,7 +10,6 @@
 // act like a Queue
 var nearestExit = function(maze, entrance) {
     let m = maze.length , n = maze[0].length
-    console.log("n"+n);
     if(m == 0 && n == 0) return -1;
     let queue = new Array()
 
@@ -31,7 +30,6 @@ var nearestExit = function(maze, entrance) {
              if(x < 0 || x >= m || y < 0 || y >= n || maze[x][y] === '+') continue; // dont enter
              if(x == 0 || x == m-1 || y==0 || y== n-1) return steps;
             queue.push([[x,y],steps])    
-            console.log([x,y]);
             maze[x][y] = '+'
         }
 
