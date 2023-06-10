@@ -8,6 +8,8 @@ const ex876 = require('./easy/ex876')
 const ex94 = require('./easy/ex94')
 const ex1672 = require('./easy/ex1672')
 const ex242 = require('./easy/ex242')
+const ex2124 = require('./easy/ex2124')
+
 const ex15 = require('./medium/ex15')
 const ex371 = require('./medium/ex371')
 const ex455 = require('./medium/ex455')
@@ -125,6 +127,9 @@ let Roman = ex12.intToRoman(9826)
 console.log(Roman);
 let isAnagram = ex242.isAnagram("cab","acb")
 console.log(isAnagram)
+
+let aBeforeB = ex2124.checkString("aababbbb")
+console.log(aBeforeB)
 app.listen(port, () => {
   console.log(`app listening on port ${port}`)
 })
