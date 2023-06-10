@@ -16,6 +16,7 @@ const ex455 = require('./medium/ex455')
 const ex322 = require('./medium/ex322')
 const ex1926 = require('./medium/ex1926')
 const ex5 = require('./medium/ex5')
+const ex1578 = require('./medium/ex1578')
 
 const ex12 =require('./HashMap/ex12_IntegerToRoman')
 
@@ -130,6 +131,9 @@ console.log(isAnagram)
 
 let aBeforeB = ex2124.checkString("aababbbb")
 console.log(aBeforeB)
+
+let MinimumBalons = ex1578.minCost("aaaaaaaaaaaaaa",[1,3,6,5,4,5,4,4,2,8,3,10,6,6])
+console.log(MinimumBalons)
 app.listen(port, () => {
   console.log(`app listening on port ${port}`)
 })
