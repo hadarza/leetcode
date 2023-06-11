@@ -9,6 +9,8 @@ const ex94 = require('./easy/ex94')
 const ex1672 = require('./easy/ex1672')
 const ex242 = require('./easy/ex242')
 const ex2124 = require('./easy/ex2124')
+const ex112 = require('./easy/ex112')
+
 
 const ex15 = require('./medium/ex15')
 const ex371 = require('./medium/ex371')
@@ -17,7 +19,6 @@ const ex322 = require('./medium/ex322')
 const ex1926 = require('./medium/ex1926')
 const ex5 = require('./medium/ex5')
 const ex1578 = require('./medium/ex1578')
-
 const ex12 =require('./HashMap/ex12_IntegerToRoman')
 
 const currying = require('./js-functions/currying')
@@ -134,6 +135,9 @@ console.log(aBeforeB)
 
 let MinimumBalons = ex1578.minCost("aaaaaaaaaaaaaa",[1,3,6,5,4,5,4,4,2,8,3,10,6,6])
 console.log(MinimumBalons)
+
+let hasPath = ex112.hasPath([5,4,8,11,null,13,4,7,2,null,null,5,1])
+console.log(hasPath)
 app.listen(port, () => {
   console.log(`app listening on port ${port}`)
 })
