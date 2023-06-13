@@ -25,4 +25,4 @@ var haspathSum = function(root, targetSum) {
     return haspathSum(root.left, targetSum - root.val) || haspathSum(root.right, targetSum - root.val)
     
 };
-module.exports = {pathSum}
+module.exports = {haspathSum}
