@@ -11,7 +11,6 @@
 
 //2. Implement set interval and clear timeout without using the original functions.
 
-//Lets say you would want to support a full CRUD system. How would you go around doing that? Elaborate specifically.
 
 //Implement a function that sums up the amount of words that are in the same length and have the same letters.
 
@@ -35,9 +34,3 @@
 // 2.Minimum Deletion Cost to Avoid Repeating Letters
 // Answer Question
 // 3. implement game of matching countries to capitals
-
-
-//Flicker API
-
-//5db57797715b7a04f0da5da292235614
-//a30accfef45e31fd

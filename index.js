@@ -10,7 +10,7 @@ const ex1672 = require('./easy/ex1672')
 const ex242 = require('./easy/ex242')
 const ex2124 = require('./easy/ex2124')
 const ex112 = require('./easy/ex112')
-
+const ex1791 = require('./easy/ex1791')
 
 const ex15 = require('./medium/ex15')
 const ex371 = require('./medium/ex371')
@@ -20,11 +20,18 @@ const ex1926 = require('./medium/ex1926')
 const ex5 = require('./medium/ex5')
 const ex1578 = require('./medium/ex1578')
 const ex12 =require('./HashMap/ex12_IntegerToRoman')
+const ex279 = require('./medium/ex279') 
+
+const DFSprint = require('./DFS/DfsPrint')
+const BFSprint = require('./BFS/BfsPrint')
 
 const ex1Codility = require('./coodility/BinaryGap')
+const ex2Codility = require('./coodility/CyclicRotation')
 const currying = require('./js-functions/currying')
 const closures = require('./js-functions/scope_letVar')
-const dotenv = require('dotenv')
+const dotenv = require('dotenv');
+const { Maze } = require('./DFS/Maze');
+const ex200 = require('./SCC/ex200')
 dotenv.config()
 
 // middleware
@@ -142,6 +149,41 @@ console.log(isAnagram)
 
 var length = ex1Codility.LongestSequenceOfZero(561892)
 console.log(length)
+
+ex2Codility.CyclicRotation([1,2,3,4,5,8],3)
+
+// const numSquares = ex279.numSquares(18)
+// console.log(numSquares)
+
+
+const graph = {
+  a:['b','c'],
+  b:['d'],
+  c:['e'],
+  d:['f'],
+  e:[],
+  f:[]
+}
+// DFSprint.DFSprint(graph,'a')
+// console.log("recursive")
+// DFSprint.DFSprintRecursion(graph,'a')
+
+// console.log("BFS")
+// BFSprint.BFSprint(graph,'a')
+
+var n = 4;
+var edges = [[0, 1], [1, 2], [2, 3]];
+var source = 0;
+var destination = 3;
+
+// var result = ex1791.validPath(n,edges,source,destination)
+//   console.log(result)
+
+var foundWay = Maze(4,4,[[0,0,1,0],[0,0,0,1],[0,1,1,1],[0,0,1,0]],[1,0],[3,1])
+console.log("found way"+foundWay)
+
+
+ex200.scc()
 app.listen(port, () => {
   console.log(`app listening on port ${port}`)
 })
